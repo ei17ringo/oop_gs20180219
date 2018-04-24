@@ -10,6 +10,14 @@ class Car{
   //private 同じクラス内からのみアクセス可能
   //protected 同じクラス、及び子クラスからアクセス可能
 
+  //コンストラクタ
+  //インスタンス化された時に一番初めに必ず実行される関数
+  function __construct(){
+    $this->speed = 60;
+
+  }
+
+
   // カプセル化：プロパティに直接アクセスできないようにし、プロパティの値を処理しやすいように保つこと
   //セッター：プロパティに値を代入。set+プロパティ名で表される
   function setSpeed($jisoku){
@@ -59,9 +67,9 @@ echo $car1->getSpeed();
 echo "<br>";
 
 $car2 = new Car();
-$car2->speed = 80;
+// $car2->setSpeed(80);
 echo "Car2の時速<br>";
-echo $car2->speed;
+echo $car2->getSpeed();
 echo "<br>";
 
 

@@ -7,6 +7,9 @@ class Robot{
   private $name;
   private $food;
 
+  //コンストラクタで各プロパティの初期値を設定してください
+  
+
   function setName($namae){
     $this->name = $namae;
   }
